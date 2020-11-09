@@ -1,10 +1,13 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
+    box-sizing: border-box;
     display: flex;
     flex-flow: column;
     margin: 0px;
-    min-height: 100%;
     background-color: rgb(94, 194, 161);
+
 }
 #name{
     font-size: 2em;
@@ -15,6 +18,14 @@ a{
     color: black;
     border: none;
     text-decoration: none;
+}
+footer img{
+    width: 50px;
+    margin-right: 50px;
+    padding: 5px;
+}
+footer img:last-of-type{
+    margin-right: 0px;
 }
 a:hover{
     text-decoration: underline;
@@ -38,6 +49,7 @@ header{
 html{
     font-family: sans-serif;
     margin: 0%;
+    box-sizing: border-box;
 }
 p{
 }
@@ -49,7 +61,9 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: cursive;
 }
+
 main{
     font-size: 20px;
     line-height: 150%;
@@ -60,8 +74,18 @@ main{
     min-width: 800px;
     margin: auto;
     background-color: aquamarine;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-left: 1em;
-    padding-bottom: 100%;
     box-shadow: 0px 10px 5px 5px rgb(42, 102, 87);
+}
+footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: aqua;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
